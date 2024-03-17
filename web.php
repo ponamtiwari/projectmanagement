@@ -39,6 +39,8 @@ Route::get('/editproject/{id}',[ProjectController::class,'editProject']);
 Route::post('/updateproject/{id}',[ProjectController::class,'updateProject']);
 Route::get('/deleteproject/{id}',[ProjectController::class,'deleteProject']);
 Route::get('/project/{id}',[ProjectController::class,'showProject']);
+Route::get('/change',[ProjectController::class,'changePassword']);
+Route::post('/updatepass',[ProjectController::class,'updatePassword']);
 
 Route::get('/login', function () {
     return view('login');
